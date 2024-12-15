@@ -27,5 +27,3 @@ COPY src/ /var/www/html/
 COPY platform/httpd.conf /etc/apache2/apache2.conf
 COPY platform/ssl.conf /etc/apache2/sites-enabled/ssl.conf
 COPY platform/php.ini /etc/php7/php.ini
-RUN apt-get update && apt-get install -y libapache2-mod-php \
-    && docker-php-ext-install mysqli
