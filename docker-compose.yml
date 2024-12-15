@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  mysql1:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    networks:
+      - example1-network
+
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "4444:80"
+    networks:
+      - example1-network
+
+  phpmyadmin:
+    build:
+      context: ./phpmyadmin
+      dockerfile: Dockerfile
+    ports:
+      - "44440:80"
+    networks:
+      - example1-network
+
+  alpine:
+    build:
+      context: ./alpine
+      dockerfile: Dockerfile
+    networks:
+      - example1-network
+
+networks:
+  example1-network:
+    driver: bridge
