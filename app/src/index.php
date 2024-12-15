@@ -14,7 +14,7 @@
                 $servername = "mysql1_tugas4"; 
                 $username = "root";
                 $password = "mydb6789tyui";
-                $dbname = "mydb_tugas3"; 
+                $dbname = "mydb_tugas4"; 
 
                 $conn = new mysqli($servername, $username, $password, $dbname);
                 
