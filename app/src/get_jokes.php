@@ -19,7 +19,7 @@
 
             $random_image = $images[array_rand($images)];
 
-            echo "<img src='images/$random_image' alt='Random Image' class='random-image'/>";
+            echo "<img src='$random_image' alt='Random Image' class='random-image'/>";
 
             if (isset($_GET['joke_text']) && isset($_GET['created_at'])) {
                 $joke_text = htmlspecialchars($_GET['joke_text']);
