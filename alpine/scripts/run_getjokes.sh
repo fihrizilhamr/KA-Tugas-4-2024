@@ -1,7 +1,7 @@
 #!/bin/sh
 apk update && apk add --no-cache curl jq mysql-client
 
-MYSQL_HOST=mysql1
+MYSQL_HOST=mysql1_tugas4
 MYSQL_USER=root
 MYSQL_PASSWORD=mydb6789tyui
 MYSQL_DATABASE=mydb_tugas3

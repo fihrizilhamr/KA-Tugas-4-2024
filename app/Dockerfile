@@ -23,7 +23,7 @@ ENV MODE=development \
     MYSQL_ROOT_PASSWORD=mydb6789tyui \
     MYSQL_ROOT_HOST=%
 
-COPY src/ /var/www/html/
+COPY src/ /var/www/localhost/htdocs/
 COPY platform/httpd.conf /etc/apache2/apache2.conf
 COPY platform/ssl.conf /etc/apache2/sites-enabled/ssl.conf
 COPY platform/php.ini /etc/php7/php.ini

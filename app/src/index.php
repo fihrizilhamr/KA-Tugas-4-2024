@@ -11,7 +11,7 @@
         <h1>Chuck Norris Jokes</h1>
         <div class="jokes-list">
             <?php
-                $servername = "mysql1"; 
+                $servername = "mysql1_tugas4"; 
                 $username = "root";
                 $password = "mydb6789tyui";
                 $dbname = "mydb_tugas3"; 
